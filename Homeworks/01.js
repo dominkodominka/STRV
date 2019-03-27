@@ -14,7 +14,7 @@ callApi('swapi.co/api/people/1', (err, data) => {
 })
 
 console.log('mamamamama')
-*/
+
 
 function callApiDumb(url) {
     try {
@@ -27,7 +27,7 @@ function callApiDumb(url) {
         console.error(error)
       }
     }
-
+*/
 async function callApi({path, fullUrl}) {
   const url = fullUrl || `${BASE_URL}/${path}`
   const result = JSON.parse(await request(url))
